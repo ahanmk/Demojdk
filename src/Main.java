@@ -1,5 +1,8 @@
-public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+import gui.MainWindow;
+import javax.swing.SwingUtilities;
+
+public class Main {
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> new MainWindow().setVisible(true));
     }
 }
